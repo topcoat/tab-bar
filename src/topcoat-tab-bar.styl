@@ -15,7 +15,7 @@
 * limitations under the License.
 *
 */
-@import button
+@import topcoat-button
 @import button-bar
 /* topdoc
   name: Tab Bar
@@ -61,14 +61,10 @@
 }
 
 .topcoat-tab-bar__button {
-  @extend .button;
-  padding: var-padding;
-  line-height: var-line-height;
+  @extend .topcoat-button;
+  border-radius: 0;
+  border: none;
   border-top: 1px solid #a5a8a8;
-  background-color: #e5e9e8;
-  box-shadow: inset 0 1px #fff;
-  color: #454545;
-  text-shadow: 0 1px #fff;
 }
 
 .topcoat-tab-bar__button:active,
@@ -79,15 +75,11 @@
   box-shadow: inset 0 0 2px #c0ced8;
 }
 
-.topcoat-button-bar__button:disabled {
+.topcoat-tab-bar__button:disabled {
   @extend .button--disabled;
 }
 
-.topcoat-button-bar__button:hover {
-}
-
-.topcoat-button-bar__button:focus,
-.topcoat-button-bar__button--large:focus {
-  box-shadow: 0 0 0 2px #6fb5f1;
+.topcoat-tab-bar__button:focus,
+.topcoat-tab-bar__button--large:focus {
   z-index: 1;
 }
