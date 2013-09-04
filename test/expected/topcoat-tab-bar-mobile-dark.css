@@ -111,6 +111,8 @@
     - bar
 */
 .topcoat-tab-bar__button {
+  padding: 0 1.25rem;
+  line-height: 3rem;
   border-top: 1px solid #a5a8a8;
   background-color: #e5e9e8;
   box-shadow: inset 0 1px #fff;

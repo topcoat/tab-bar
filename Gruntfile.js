@@ -35,28 +35,8 @@ module.exports = function(grunt) {
                     src: 'src/topcoat-tab-bar.styl',
                     dest: 'css/topcoat-tab-bar-mobile-dark.css'
                 }]
-            },
-
-            desktoplight: {
-                options: {
-                    import: ['theme-topcoat-desktop-light']
-                },
-                files: [{
-                    src: 'src/topcoat-tab-bar.styl',
-                    dest: 'css/topcoat-tab-bar-desktop-light.css'
-                }]
-            },
-
-            desktopdark: {
-                options: {
-                    import: ['theme-topcoat-desktop-dark']
-                },
-
-                files: [{
-                    src: 'src/topcoat-tab-bar.styl',
-                    dest: 'css/topcoat-tab-bar-desktop-dark.css'
-                }]
             }
+
         },
 
         topdoc: {
