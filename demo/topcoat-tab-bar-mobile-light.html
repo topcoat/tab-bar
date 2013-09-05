@@ -51,7 +51,7 @@
             <header>
               <h2>Tab Bar</h2>
             </header>
-            <section class="component"><div class="topcoat-tab-bar">  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar-1">    <button class="topcoat-tab-bar__button">One</button>  </label>  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar-1">    <button class="topcoat-tab-bar__button">Two</button>  </label>  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar-1">    <button class="topcoat-tab-bar__button">Three</button>  </label></div></section>
+            <section class="component"><div class="topcoat-tab-bar">  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar">    <button class="topcoat-tab-bar__button">One</button>  </label>  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar">    <button class="topcoat-tab-bar__button">Two</button>  </label>  <label class="topcoat-tab-bar__item">    <input type="radio" name="tab-bar">    <button class="topcoat-tab-bar__button">Three</button>  </label></div></section>
             <section class="examples">
               <h4>Examples</h4>
               <ul>
@@ -63,13 +63,20 @@
               <section class="code">
                 <div>
                   <h3>HTML</h3>
-                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-tab-bar&quot;&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-1&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;One&lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-1&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;Two&lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar-1&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;Three&lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
+                  <pre class="html"><code data-language="html">&lt;div class=&quot;topcoat-tab-bar&quot;&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;One&lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;Two&lt;/button&gt;  &lt;/label&gt;  &lt;label class=&quot;topcoat-tab-bar__item&quot;&gt;    &lt;input type=&quot;radio&quot; name=&quot;tab-bar&quot;&gt;    &lt;button class=&quot;topcoat-tab-bar__button&quot;&gt;Three&lt;/button&gt;  &lt;/label&gt;&lt;/div&gt;</code></pre>
                 </div>
                 <div>
                   <h3>CSS</h3>
                   <pre class="css"><code data-language="css">.topcoat-tab-bar__button {
-  border-radius: 0;
-  border: none;
+  padding: 0 1.25rem;
+  height: 3rem;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  color: #454545;
+  text-shadow: 0 1px #fff;
+  vertical-align: top;
+  background-color: #e5e9e8;
+  box-shadow: inset 0 1px #fff;
   border-top: 1px solid #a5a8a8;
 }
 .topcoat-tab-bar__button:active,

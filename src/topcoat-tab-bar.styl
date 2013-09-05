@@ -15,25 +15,25 @@
 * limitations under the License.
 *
 */
-@import topcoat-button
+@import button
 @import button-bar
 /* topdoc
   name: Tab Bar
-  description: Component of grouped buttons
+  description: Component of tab buttons
   modifiers:
     :disabled: Disabled state
   markup:
     <div class="topcoat-tab-bar">
       <label class="topcoat-tab-bar__item">
-        <input type="radio" name="tab-bar-1">
+        <input type="radio" name="tab-bar">
         <button class="topcoat-tab-bar__button">One</button>
       </label>
       <label class="topcoat-tab-bar__item">
-        <input type="radio" name="tab-bar-1">
+        <input type="radio" name="tab-bar">
         <button class="topcoat-tab-bar__button">Two</button>
       </label>
       <label class="topcoat-tab-bar__item">
-        <input type="radio" name="tab-bar-1">
+        <input type="radio" name="tab-bar">
         <button class="topcoat-tab-bar__button">Three</button>
       </label>
     </div>
@@ -61,18 +61,25 @@
 }
 
 .topcoat-tab-bar__button {
-  @extend .topcoat-button;
-  border-radius: 0;
-  border: none;
-  border-top: 1px solid #a5a8a8;
+  @extend .button
+  padding: var-padding;
+  height: var-line-height;
+  line-height: var-line-height;
+  letter-spacing: var-letter-spacing;
+  color: var-color;
+  text-shadow: var-text-shadow;
+  vertical-align: var-vertical-align;
+  background-color: var-background-color;
+  box-shadow var-box-shadow
+  border-top: var-border;
 }
 
 .topcoat-tab-bar__button:active,
 .topcoat-tab-bar__button--large:active,
 :checked + .topcoat-tab-bar__button {
-  color: #0083e8;
-  background-color: #e0f0fa;
-  box-shadow: inset 0 0 2px #c0ced8;
+  color: var-color--tab-bar--active;
+  background-color: var-background-color--tab-bar--active;
+  box-shadow: var-box-shadow--tab-bar--active;
 }
 
 .topcoat-tab-bar__button:disabled {
