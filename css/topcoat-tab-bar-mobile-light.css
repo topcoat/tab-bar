@@ -50,7 +50,7 @@
 .topcoat-tab-bar {
   display: table;
   table-layout: fixed;
-  white-space: no-wrap;
+  white-space: nowrap;
   margin: 0;
   padding: 0;
 }
