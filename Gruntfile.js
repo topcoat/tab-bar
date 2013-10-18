@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 
         stylus: {
             options: {
-                paths: ['node_modules/topcoat-button-base/src', 'node_modules/topcoat-button/src', 'node_modules/topcoat-button-bar-base/src', 'node_modules/topcoat-utils/src/mixins', 'node_modules/topcoat-theme/src'],
+                paths: grunt.file.expand('node_modules/topcoat-*/src'),
                 compress: false
             },
 
