@@ -15,8 +15,8 @@
 * limitations under the License.
 *
 */
-@import button
-@import button-bar
+@import "topcoat-button-bar-base";
+@import "topcoat-button-base";
 /* topdoc
   name: Tab Bar
   description: Component of tab buttons
@@ -48,48 +48,48 @@
     - group
     - bar
 */
-.topcoat-tab-bar {
-  @extend .button-bar
+.tab-bar {
+  extend: %button-bar;
 }
 
-.topcoat-tab-bar__item {
-  @extend .button-bar__item
+.tab-bar__item {
+  extend: %button-bar__item;
 }
 
-.topcoat-tab-bar__item > input {
-  @extend .button-bar__item > input
+.tab-bar__item > input {
+  extend: %button-bar__item__input;
 }
 
-.topcoat-tab-bar__button {
-  @extend .button
-  padding: var-padding;
-  height: var-line-height;
-  line-height: var-line-height;
-  letter-spacing: var-letter-spacing;
-  color: var-color;
-  text-shadow: var-text-shadow;
-  vertical-align: var-vertical-align;
-  background-color: var-background-color;
-  box-shadow var-box-shadow
-  border-top: var-border;
+.tab-bar__button {
+  extend: %button;
+  padding: var(padding);
+  height: var(line-height);
+  line-height: var(line-height);
+  letter-spacing: var(letter-spacing);
+  color: var(color);
+  text-shadow: var(text-shadow);
+  vertical-align: var(vertical-align);
+  background-color: var(background-color);
+  box-shadow: var(box-shadow);
+  border-top: var(border);
 }
 
-.topcoat-tab-bar__button:active,
-.topcoat-tab-bar__button--large:active,
-:checked + .topcoat-tab-bar__button {
-  color: var-color--tab-bar--active;
-  background-color: var-background-color--tab-bar--active;
-  box-shadow: var-box-shadow--tab-bar--active;
+.tab-bar__button:active,
+.tab-bar__button--large:active,
+:checked + .tab-bar__button {
+  color: var(color--tab-bar--active);
+  background-color: var(background-color--tab-bar--active);
+  box-shadow: var(box-shadow--tab-bar--active);
 }
 
-.topcoat-tab-bar__button:disabled {
-  @extend .button--disabled;
+.tab-bar__button:disabled {
+  extend: %button--disabled;
 }
 
-.topcoat-tab-bar__button:focus,
-.topcoat-tab-bar__button--large:focus {
+.tab-bar__button:focus,
+.tab-bar__button--large:focus {
   z-index: 1;
-  box-shadow var-box-shadow--cta, var-box-shadow--focus
-  outline 0
+  box-shadow: var(box-shadow--cta), var(box-shadow--focus);
+  outline: 0;
 }
 
