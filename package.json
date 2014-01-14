@@ -1,6 +1,6 @@
 {
   "name": "topcoat-tab-bar",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Topcoat default tab bar skin",
   "main": "index.html",
   "style": "src/tab-bar.css",
