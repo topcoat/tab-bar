@@ -8,7 +8,7 @@
   markup:
     <div class="topcoat-tab-bar">
       <label class="topcoat-tab-bar__item">
-        <input type="radio" name="tab-bar">
+        <input type="radio" name="tab-bar" checked="true">
         <button class="topcoat-tab-bar__button">One</button>
       </label>
       <label class="topcoat-tab-bar__item">
@@ -17,6 +17,18 @@
       </label>
       <label class="topcoat-tab-bar__item">
         <input type="radio" name="tab-bar">
+        <button class="topcoat-tab-bar__button">Three</button>
+      </label>
+    </div>
+    <br>
+    <div class="topcoat-tab-bar">
+      <label class="topcoat-tab-bar__item">
+        <button class="topcoat-tab-bar__button">One</button>
+      </label>
+      <label class="topcoat-tab-bar__item">
+        <button class="topcoat-tab-bar__button">Two</button>
+      </label>
+      <label class="topcoat-tab-bar__item">
         <button class="topcoat-tab-bar__button">Three</button>
       </label>
     </div>

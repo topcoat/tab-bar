@@ -1,6 +1,6 @@
 {
   "name": "topcoat-tab-bar",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Topcoat default tab bar skin",
   "style": "src/topcoat-tab-bar",
   "directories": {
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/topcoat/topcoat/tab-bar.git"
+    "url": "https://github.com/topcoat/tab-bar.git"
   },
   "keywords": [
     "css",
@@ -56,6 +56,7 @@
     "topdoc-theme": "^0.7.0"
   },
   "dependencies": {
+    "topcoat-button": "^0.7.1",
     "topcoat-button-bar-base": "^1.0.1"
   },
   "config": {
