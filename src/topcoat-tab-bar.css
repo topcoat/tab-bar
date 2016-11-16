@@ -1,0 +1,78 @@
+@import "topcoat-button-bar-base";
+@import "topcoat-button-base";
+/* topdoc
+  name: Tab Bar
+  description: Component of tab buttons
+  modifiers:
+    :disabled: Disabled state
+  markup:
+    <div class="topcoat-tab-bar">
+      <label class="topcoat-tab-bar__item">
+        <input type="radio" name="tab-bar">
+        <button class="topcoat-tab-bar__button">One</button>
+      </label>
+      <label class="topcoat-tab-bar__item">
+        <input type="radio" name="tab-bar">
+        <button class="topcoat-tab-bar__button">Two</button>
+      </label>
+      <label class="topcoat-tab-bar__item">
+        <input type="radio" name="tab-bar">
+        <button class="topcoat-tab-bar__button">Three</button>
+      </label>
+    </div>
+  examples:
+    mobile tab bar: http://codepen.io/Topcoat/pen/rJICF
+  tags:
+    - desktop
+    - light
+    - dark
+    - mobile
+    - tab
+    - group
+    - bar
+*/
+.tab-bar {
+  @extend: %button-bar;
+}
+
+.tab-bar__item {
+  @extend: %button-bar__item;
+}
+
+.tab-bar__item > input {
+  @extend: %button-bar__item__input;
+  z-index: 2;
+}
+
+.tab-bar__button {
+  @extend: %button;
+  padding: var(--padding);
+  min-height: var(--line-height);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  color: var(--color);
+  text-shadow: var(--text-shadow);
+  vertical-align: var(--vertical-align);
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  border-top: var(--border);
+}
+
+.tab-bar__button:active,
+:checked + .tab-bar__button,
+:active + .tab-bar__button {
+  color: var(--color--tab-bar--active);
+  background-color: var(--background-color--tab-bar--active);
+  box-shadow: var(--box-shadow--tab-bar--active);
+}
+
+.tab-bar__button:disabled {
+  @extend: %button--disabled;
+}
+
+.tab-bar__button:focus,
+:focus + .tab-bar__button {
+  z-index: 1;
+  box-shadow: var(--box-shadow--cta), var(--box-shadow--focus);
+  outline: 0;
+}
