@@ -26,7 +26,7 @@
         <button class="topcoat-tab-bar__button">One</button>
       </label>
       <label class="topcoat-tab-bar__item">
-        <button class="topcoat-tab-bar__button">Two</button>
+        <button class="topcoat-tab-bar__button--selected">Two</button>
       </label>
       <label class="topcoat-tab-bar__item">
         <button class="topcoat-tab-bar__button">Three</button>
@@ -56,7 +56,8 @@
   z-index: 2;
 }
 
-.tab-bar__button {
+.tab-bar__button,
+.tab-bar__button--selected {
   @extend: %button;
   padding: var(--padding);
   min-height: var(--line-height);
@@ -71,6 +72,7 @@
 }
 
 .tab-bar__button:active,
+.tab-bar__button--selected,
 :checked + .tab-bar__button,
 :active + .tab-bar__button {
   color: var(--color--tab-bar--active);

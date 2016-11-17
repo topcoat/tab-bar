@@ -39,7 +39,8 @@ body {
   outline-style: none;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   padding: 0;
   margin: 0;
   font: inherit;
@@ -59,7 +60,8 @@ body {
   outline: none;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -67,23 +69,27 @@ body {
   user-select: none;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   box-sizing: border-box;
   background-clip: padding-box;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   white-space: nowrap;
   overflow: hidden;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   position: relative;
   display: inline-block;
   vertical-align: top;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   text-overflow: ellipsis;
 }
 
@@ -114,7 +120,8 @@ body {
   margin: 0;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   text-decoration: none;
 }
 
@@ -144,7 +151,7 @@ body {
         <button class="topcoat-tab-bar__button">One</button>
       </label>
       <label class="topcoat-tab-bar__item">
-        <button class="topcoat-tab-bar__button">Two</button>
+        <button class="topcoat-tab-bar__button--selected">Two</button>
       </label>
       <label class="topcoat-tab-bar__item">
         <button class="topcoat-tab-bar__button">Three</button>
@@ -166,7 +173,8 @@ body {
   z-index: 2;
 }
 
-.topcoat-tab-bar__button {
+.topcoat-tab-bar__button,
+.topcoat-tab-bar__button--selected {
   padding: 0 1.25rem;
   min-height: 3rem;
   line-height: 3rem;
@@ -180,6 +188,7 @@ body {
 }
 
 .topcoat-tab-bar__button:active,
+.topcoat-tab-bar__button--selected,
 :checked + .topcoat-tab-bar__button,
 :active + .topcoat-tab-bar__button {
   color: hsla(207, 74%, 52%, 1);
